@@ -39,3 +39,81 @@
   --z-fixed: 100;
   --z-tooltip: 10;
 }
+
+
+/* ================ RESET/DEFAULT ========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--body-color);
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--font-family);
+    font-size: var(--h3-font-size); /* 16px = normal font size */
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    user-select: none;
+}
+
+img {
+    width: 100%;
+    height: auto; /* !important for making image responsive */
+}
+
+button,
+input{
+    border: none;
+    outline: none;
+}
+
+.button,
+.open_menu,
+.close_menu{
+    cursor: pointer;
+    font-size: var(--h3-font-size);
+    font-family: var(--font-family);
+}
+
+/* REMOVE BLUE HIGHLIGHT COLOR WHEN USER SELECTS A LINK */
+
+
+/* ================ REUSABLE CLASSES ========================= */
+.section {
+    padding: 50px 0 10px 0; /* top = 75px , bottom = 32px */
+}
+
+.section_title {
+    font-family: var(--font-family);
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-bold-weight);
+    color: var(--text-color-grey);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ================ CONTAINER ========================= */
+.container {
+    margin: 0 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+.main {
+    overflow: hidden; /* the 'MAIN' houses all of the sections */
+}
