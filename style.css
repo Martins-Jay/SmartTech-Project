@@ -1,0 +1,41 @@
+/* ===================== GOOGLE FONT =========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700;900&display=swap");
+
+/* ================ DEFINATION OF VARIABLES ================== */
+:root {
+  /* ================ HEADER HEIGHT ========================= */
+  --header-height: 56px;
+
+  /* ========================= COLORS ====================== */
+  --body-color: #f6f5f0;
+  --special-color-thick: #7665e9;
+  --special-color-light: #a399e3;
+  --theme-color-light: rgb(230, 230, 230);
+  --text-color: #000;
+  --text-color-grey: rgb(91, 90, 90);
+  --container-color: rgb(205, 205, 205);
+
+  /* =============== FONT AND TYPOGRAPHY ================= */
+  --font-family: "Poppins", sans-serif;
+
+  --biggest-font-size: 32px;
+  --h1-font-size: 24px;
+  --h2-font-size: 20px;
+  --h3-font-size: 16px;
+
+  --normal-font-size: 15px;
+  --small-font-size: 14px;
+  --smaller-font-size: 13px;
+  --p-font-size: 15px;
+
+  /* ================= FONT WEIGHT ==================== */
+  --font-extral-light-weight: 200;
+  --font-light-weight: 300;
+  --font-medium-weight: 400;
+  --font-bold-weight: 700;
+  --font-black-weight: 900;
+
+  /* =================== Z-INDEX ====================== */
+  --z-fixed: 100;
+  --z-tooltip: 10;
+}
