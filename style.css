@@ -89,7 +89,11 @@ input{
 }
 
 /* REMOVE BLUE HIGHLIGHT COLOR WHEN USER SELECTS A LINK */
-
+a,
+.open_menu,
+.close_menu{
+  -webkit-tap-highlight-color: transparent;
+}
 
 /* ================ REUSABLE CLASSES ========================= */
 .section {
