@@ -121,3 +121,96 @@ a,
 .main {
     overflow: hidden; /* the 'MAIN' houses all of the sections */
 }
+
+/* ================= GENERAL: NAVIGATION SECTION STYLING ====================== */
+
+/* ====== HEADER (STRICTLY FOR POSITIONING & COLORING OF THE CONTAINER) ====== */
+.header_section {
+    width: 100%;
+    background-color: #7665e9;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: var(--z-fixed);
+}
+
+/* === CONTAINER (STRICTY FOR STRUCTURING THE CONTENTS IN HEADER_SECTION) ==== */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+    align-items: center;
+    justify-content: space-between;
+}  
+
+.logo_section {
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.shop_lock_icon {
+    color: var(--body-color);
+    font-size: var(--h2-font-size); /*  20px */
+}
+
+.logo_text {
+    color: white;
+    letter-spacing: 1px;
+    font-size: var(--h3-font-size);
+    align-self: baseline;
+}
+
+.open_menu_icon {
+    font-size: var(--h2-font-size); /*  20px */
+    color: var(--body-color);
+    user-select: none;
+}
+/* THE END OF 'NAVIGATION SECTION' STYLING FOR SMALL SCREEN DEVICE ABOVE */
+  
+/* =========== 'NAVIGATION MENU' STYLING FOR SMALL SCREEN DEVICES ============ */
+  @media screen and (max-width: 480px) {
+    .nav_menu {
+      width: 100%;
+      background-color: var(--special-color-thick);
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: -200%;
+      padding: 110px 0;
+      border-radius: 0 0 24px 24px;
+      z-index: var(--z-fixed);
+  
+      transition: 0.7s;
+    }
+  
+    .sign_up_section {
+      display: none;
+    }
+}
+
+.show_menu {
+    top: 0;
+}
+
+.close_menu_icon {
+    font-size: 26px;
+    color: var(--body-color);
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.nav_link {
+    color: var(--body-color);
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    font-size: var(--normal-font-size);
+}
