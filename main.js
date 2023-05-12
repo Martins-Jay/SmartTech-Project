@@ -30,3 +30,26 @@ const main_section = document.querySelector(".main_section");
 main_section?.addEventListener("click", () => {
   nav_menu?.classList.remove("show_menu");
 });
+
+// SWIPPER PLUGIN DEFINITION
+var home_swiper = new Swiper(".home-swiper", {
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
